@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface InfoPageProps {
   textData: { message: string };
   imageUrl: string;
@@ -17,10 +19,12 @@ export default function InfoPage({ textData, imageUrl }: InfoPageProps) {
 
       <section>
         <h2>Image from Express</h2>
-        <img
+        <Image
           src={imageUrl}
           alt="Sample from Express server"
           style={{ maxWidth: "200px", border: "1px solid #ccc", padding: "1rem" }}
+          width={400}
+          height={400}
         />
       </section>
 
