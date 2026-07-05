@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "download-assets": "node download-assets.js",
     "build": "npm run download-assets && next build --turbopack",
+    "build:export": "NEXT_PUBLIC_EXPORT=true npm run download-assets && next build --turbopack",
     "start": "next start",
+    "start:export": "npx http-server out -p 8000",
     "lint": "eslint"
   },
   "dependencies": {

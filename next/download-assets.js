@@ -35,7 +35,7 @@ async function main() {
   try {
     console.log("Starting asset download\n");
 
-    const imageUrl = await downloadImage(`${API_BASE}/image`, "sample.png");
+    const imageUrl = await downloadImage(`${API_BASE}/images/sample.png`, "sample.png");
 
     if (imageUrl) {
       console.log("\nAssets downloaded successfully");

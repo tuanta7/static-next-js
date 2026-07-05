@@ -11,7 +11,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>Home Page</div>
-      <Link href="/info">Info</Link>
+      <nav style={{ marginTop: "20px" }}>
+        <ul>
+          <li>
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link href="/showcase">Showcase</Link>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 }
